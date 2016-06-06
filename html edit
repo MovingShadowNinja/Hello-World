@@ -18,26 +18,26 @@ function sub(a,b){
 confirm("Hello welcome to the calculator");
 var userAnswer = prompt("Do you want to use the calculator");
 if( userAnswer === "yes"){
-var r = prompt("Do you want to muiltply or add? Enter 1 for muiltplication enter 2 for addition, enter 3 for division, and enter 4 for subtraction");
-if(r == 1){//if 
+var r = prompt("Do you want to muiltply,add,divide,or subtract? Enter muilt for muiltplication enter add for addition, enter div for division, and enter sub for subtraction");
+if(r === "muilt"){//if 
   var a = prompt("enter a number");
   var b = prompt("enter a number");
   var x = muilt(a,b);
 }
 else{// else if r==1
-  if( r == 2){ // if r==2 beginning
+  if( r === "add"){ // if r==2 beginning
   var a = prompt("enter a number");
   var b = prompt("enter a number");
    var x = add(a,b);
   }// if r==2 end
   else{ //begin r==2
-    if(r == 3){
+    if(r === div){
        var a = prompt("enter a number");
   var b = prompt("enter a number");
       var x = div(a,b);
     }//end r == 3
     else{
-      if(r == 4){
+      if(r === sub){
          var a = prompt("enter a number");
   var b = prompt("enter a number");
       var x = sub(a,b);
@@ -45,9 +45,12 @@ else{// else if r==1
     }//end r == 3
   }//end r==2
 }//else ending
-}// end of if === yes  
+}// end of if === yes 
+
 console.log(+x);
-confirm("Your answer is " +x)
+confirm("Your answer is " +x);
+
+
 </script>
 </html>
 
