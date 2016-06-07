@@ -1,6 +1,6 @@
 <html>
 <script>
-// javascript calculator
+    // javascript calculator
 function muilt(a,b){
   return (a * b);
 }
@@ -31,13 +31,13 @@ else{// else if r==1
    var x = add(a,b);
   }// if r==2 end
   else{ //begin r==2
-    if(r === div){
+    if(r === "div"){
        var a = prompt("enter a number");
   var b = prompt("enter a number");
       var x = div(a,b);
     }//end r == 3
     else{
-      if(r === sub){
+      if(r === "sub"){
          var a = prompt("enter a number");
   var b = prompt("enter a number");
       var x = sub(a,b);
